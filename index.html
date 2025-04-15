@@ -3,11 +3,23 @@
  <head>
   <meta charset="utf-8" />
   <title>инфо</title>
+  <style>
+   button {
+    background: #FA8072;
+   }
+  </style>
  </head>
  <body>
   <h3>Шафеева Алиса</h3>
   <h4>Горный университет, кафедра системного анализа и управления</h4>
   <p>3 курс</p>
   <button type="button">Подписаться на новости</button>
+  <form action='/login' method='POST'>
+  <label for='username'>Имя пользователя:</label>
+  <input type='text' id='username' name='username'><br>
+  <label for='password'>Пароль:</label>
+  <input type='password' id='password' name='password'><br>
+  <input type='submit' value='Войти'>
+  </form>
  </body>
 </html>
